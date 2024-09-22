@@ -4,8 +4,6 @@ const errorHandle = require('./errorHandle'); // 載入錯誤處理(自行建立
 const todos = []; // 清單儲存
 
 const requestListener = (req, res) => {
-  console.log(req.url);
-  console.log(req.method);
   const headers = { // header CORS
     'Access-Control-Allow-Headers': 'Content-Type, Authorization, Content-Length, X-Requested-With',
     'Access-Control-Allow-Origin': '*',
